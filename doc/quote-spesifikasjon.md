@@ -95,8 +95,6 @@ kldsjf
 
 ## Brukerhistorie (UseCase) og sekvensdiagram
 
-### Bruker - vise et tilfeldig sitat
-
 ```mermaid
 sequenceDiagram
 	 actor Bruker
@@ -104,15 +102,9 @@ sequenceDiagram
 	 participant APP as Web App Server
 	 participant REST as REST-API
      participant db as MongoDb
-	 Bruker->>Nettleser: http://forberedelse.[brukernavn].ikt-fag.no/
+	 Bruker->>Nettleser: http://quote-site
 	 Nettleser->>APP: get /
-	 APP ->> REST: get/
-  REST ->> db: select random quote
-  db->> REST: quote (JSON)
-  REST->> APP: quote (JSON)
-  APP ->> Nettleser: quote(html)
-
+	 APP ->> REST: /api/v1/quote?select=random
+     REST ->> db: h
 
 ```
-
-JON
