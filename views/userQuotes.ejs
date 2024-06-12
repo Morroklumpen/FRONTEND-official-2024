@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%- include('partials/head'); %>
+  </head>
+
+  <body>
+    <header><%- include("partials/header"); %></header>
+
+    <div class="mainContainer">
+      <div>
+        <% data.payload.forEach(function(item){ %>
+        <div class="quoteRecord">
+          <div class="quote"><%= item.quote %></div>
+          <div class="quoteSource"><%= item.author %></div>
+        </div>
+        <% }); %>
+      </div>
+    </div>
+
+    <%- include('partials/footer'); %>
+  </body>
+</html>

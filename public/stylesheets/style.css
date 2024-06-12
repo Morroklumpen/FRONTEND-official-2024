@@ -1,0 +1,91 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+  padding-left: 15px;
+}
+
+
+
+header {
+  /* background-color: #333; */
+  /* color: #fff; */
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-style: solid;
+}
+header h1 {
+  margin: 0;
+}
+.mainContainer {
+  border-style: solid;
+  padding: 10% 10% 10% 10%;
+}
+.menu{
+  font-size: 20px
+}
+.signupContainer {
+  margin-left: 20%;
+  margin-right: 20%;
+  border: 1px solid;
+  padding: 10% ;
+}
+.quoteContainer {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.quoteRecord{
+  padding-bottom: 10px;
+}
+.quote {
+  font-size: 40px;
+  font-family: 'Brush Script MT', cursive;
+}
+.quoteSource {
+  font-size: 20px;
+  text-align: right;
+}
+.errorMessage {
+  margin-top: 40px;
+  margin-right: 50px;
+  font-size: 15px;
+  text-align: center;
+  color: brown;
+}
+.infoMessage {
+  margin-top: 40px;
+  margin-right: 50px;
+  font-size: 15px;
+  text-align: center;
+}
+
+/*
+ul.nav {
+  margin:0;
+  padding:0;
+  list-style:none;
+  height:36px; line-height:36px;
+  background:#0d7963; 
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:13px;
+}
+ul.nav li {
+  border-right:1px solid #189b80;
+  float:left;
+}
+ul.nav a {
+  display:block;
+  padding:0 28px;
+  color:#ccece6;
+  text-decoration:none;
+}
+ul.nav a:hover,
+ul.nav li.current a {
+  background:#086754;
+}
+*/

@@ -1,0 +1,13 @@
+<div class="menu">
+  <a href="/">Home</a>
+</div>
+<!-- <div>Quotes <% if (data.username) { %> <%= data.username %> <% } %></div> -->
+<div class="menu"><%= title %></div>
+<div class="menu">
+  <% if (data.username) { %>
+  <a href="/logout">Logg ut</a>
+  <% } else{ %>
+  <a href="/sign-up">Sign Up</a>
+  <a href="/sign-in">Sign In</a>
+  <% } %>
+</div>

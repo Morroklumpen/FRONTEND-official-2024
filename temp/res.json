@@ -1,0 +1,19 @@
+{
+  "statuscode": 409,
+  "feedback": "jonrust could not be created!",
+  "isSuccess": false,
+  "payload": {
+    "errorResponse": {
+      "index": 0,
+      "code": 11000,
+      "errmsg": "E11000 duplicate key error collection: QuotesDatabase.users index: username_1 dup key: { username: \"jonrust\" }",
+      "keyPattern": { "username": 1 },
+      "keyValue": { "username": "jonrust" }
+    },
+    "index": 0,
+    "code": 11000,
+    "keyPattern": { "username": 1 },
+    "keyValue": { "username": "jonrust" }
+  },
+  "username": null
+}

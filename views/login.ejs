@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%- include('partials/head'); %>
+  </head>
+
+  <body>
+    <header><%- include("partials/header"); %></header>
+    <div class="mainContainer">
+      <div class="signupContainer">
+        <h2>"Sign in and quote with us!"</h2>
+
+        <form action="/sign-in" method="post">
+          <!-- <label for="user">Username:</label><br /> -->
+          <input
+            type="text"
+            id="user"
+            name="username"
+            placeholder="username"
+          /><br />
+          <!-- <label for="pw">Password:</label><br /> -->
+          <br />
+          <input
+            type="password"
+            id="pw"
+            name="password"
+            placeholder="password"
+          /><br />
+          <br />
+          <%- include('partials/footer'); %>
+          <br />
+          <input type="submit" value="Sign in" />
+        </form>
+      </div>
+    </div>
+    <!-- <%- include('partials/footer'); %> -->
+  </body>
+</html>

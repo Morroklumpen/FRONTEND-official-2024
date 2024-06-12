@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+
+  <body>
+    <h2>Coockie test</h2>
+
+    <form action="/cookie" method="post">
+      <label for="user">Bruker:</label><br />
+      <input type="text" id="user" name="username" value="jonur" /><br />
+      <label for="pw">Passord:</label><br />
+      <input type="password" id="pw" name="userpw" value="hemmelig" />
+      <br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <p><%= message %></p>
+  </body>
+</html>

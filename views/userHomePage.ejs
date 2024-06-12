@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%- include('partials/head'); %>
+  </head>
+
+  <body>
+    <header><%- include("partials/header"); %></header>
+
+    <div class="mainContainer">
+      <div>
+        <h2>"New quote"</h2>
+
+        <form action="/home" method="post">
+          <label for="quote">Quote:</label><br />
+          <input type="text" id="quote" name="quote" size="50" /><br />
+          <label for="origin">Origin:</label><br />
+          <input type="text" id="author" name="author" /><br />
+          <br /><br />
+          <input type="submit" value="Publish" />
+        </form>
+      </div>
+      <br />
+      <br />
+      <div>
+        <% data.payload.forEach(function(item){ %>
+        <div class="quoteRecord">
+          <div class="quote"><%= item.quote %></div>
+          <div class="quoteSource"><%= item.author %></div>
+        </div>
+        <% }); %>
+      </div>
+    </div>
+
+    <%- include('partials/footer'); %>
+  </body>
+</html>
