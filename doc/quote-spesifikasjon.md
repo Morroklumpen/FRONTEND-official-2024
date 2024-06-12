@@ -32,8 +32,9 @@ classDiagram
       User:  +Integer ID
       User: +String userName
     class InfoImage
-      Title : +String
-      ImageURL: +String
+      InfoImage : +String Title
+      InfoImage: +String ImageURL
+      InfoImage: +String Tekst
 
     User "1" --> "0..*" InfoImage
 ```
