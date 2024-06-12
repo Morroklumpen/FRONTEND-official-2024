@@ -31,11 +31,11 @@ classDiagram
     class User
       User:  +Integer ID
       User: +String userName
-    class Quote
-      Quote: +Integer ID
-      Quote: +String quote
+    class InfoImage
+      Title : +String
+      ImageURL: +String
 
-    User "1" --> "0..*" Quote
+    User "1" --> "0..*" InfoImage
 ```
 
 ### UseCase
