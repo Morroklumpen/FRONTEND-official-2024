@@ -25,7 +25,7 @@ ToDo: her kommer ip Plan, UseCase, Informasjonsmodell ++
 
 ```mermaid
 ---
-title: Informasjonsmodell - Sitat
+title: Informasjonsmodell - InfoImage
 ---
 classDiagram
     class User
